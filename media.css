@@ -1,0 +1,111 @@
+:root{
+     --main-clr:#000;
+     --secondary-clr:#24c7ed;
+     --heading-font: 'Concert One', cursive;
+     --main-font: 'League Spartan', sans-serif;
+}
+
+@media only screen and (max-width:1000px) {
+     .navbar{
+          position:relative;
+     }
+     .nav-links{
+          position: absolute;
+          flex-direction: column;
+          gap: 2rem;
+          background: #000;
+          left: 0;
+          right: 0;
+          z-index: 345;
+          padding-top: 1rem;
+          padding: 3rem;
+          margin-top: 3rem;
+          display: none;
+     }
+     .nav-links.active{
+          display: flex;
+     }
+     .menu{
+          display: flex;
+          justify-content: right;
+     }
+     .services{
+          padding-top: 0rem;
+     }
+     .services-list{
+          grid-template-columns:1fr 1fr;
+     }
+     .btn2{
+          width: 25%;
+     }
+     .newsletter{
+          flex-direction: column;
+          gap: 2rem;
+     }
+     .footer-widgets{
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 4rem 2rem;
+     }
+}
+
+@media only screen and (max-width:750px) {
+     .service{
+          padding: 3rem 2rem;
+     }
+     .services{
+          margin: 0 2rem;
+     }
+     .footer{
+          padding: 2rem;
+     }
+     .service::after{
+          width: 16rem;
+     }
+     .btn2{
+          width: 25%;
+     }
+}
+
+@media only screen and (max-width:650px){
+     .services-list{
+          grid-template-columns: 1fr;
+          padding: 0 6rem;
+     }
+     .footer-widgets{
+          grid-template-columns: 1fr 1fr;
+     }
+     .copyright{
+          flex-direction: column;
+          gap: 1rem;
+          text-align: center;
+     }
+     .btn2{
+          width: 35%;
+     }
+}
+
+@media only screen and (max-width:450px){
+     .services-list{
+          grid-template-columns: 1fr;
+          padding: 0;
+     }
+     .footer-widgets{
+          grid-template-columns: 1fr;
+     }
+     .heading h1{
+          font-size: 2.4rem;
+     }
+     .heading p{
+          font-size: 1.1rem;
+     }
+     .btn2{
+          width: 70%;
+     }
+     .newsletter .right button{
+          padding: 1rem;
+          font-size: 1rem;
+     }
+     .newsletter .right input{
+          width: 65%;
+     }
+}
